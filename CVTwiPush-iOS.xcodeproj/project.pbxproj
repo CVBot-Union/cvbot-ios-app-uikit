@@ -3,19 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4764888B845264A7E802DF39 /* Pods_CVTwiPush_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D08AD54D27B13D184009F75 /* Pods_CVTwiPush_iOS.framework */; };
+		63102FB62541AF620010C91A /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63102FB52541AF620010C91A /* ContainerViewController.swift */; };
+		633B33DA2547ECF000F2ACD4 /* MBPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B33D92547ECF000F2ACD4 /* MBPickerView.swift */; };
+		63911F02253C5D9600D7DB7D /* TweetListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63911F01253C5D9600D7DB7D /* TweetListTableViewController.swift */; };
+		639A21882547F83A00ED8EED /* TwitterUserPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639A21872547F83A00ED8EED /* TwitterUserPickerCell.swift */; };
+		639A218D2547F85600ED8EED /* TwitterUserPickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 639A218C2547F85600ED8EED /* TwitterUserPickerCell.xib */; };
 		63EC6E41253B47BA00D7CD64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC6E40253B47BA00D7CD64 /* AppDelegate.swift */; };
 		63EC6E43253B47BA00D7CD64 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC6E42253B47BA00D7CD64 /* SceneDelegate.swift */; };
-		63EC6E45253B47BA00D7CD64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC6E44253B47BA00D7CD64 /* ViewController.swift */; };
+		63EC6E45253B47BA00D7CD64 /* TweetListNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC6E44253B47BA00D7CD64 /* TweetListNavigationViewController.swift */; };
 		63EC6E48253B47BA00D7CD64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EC6E46253B47BA00D7CD64 /* Main.storyboard */; };
 		63EC6E4B253B47BB00D7CD64 /* CVTwiPush_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 63EC6E49253B47BA00D7CD64 /* CVTwiPush_iOS.xcdatamodeld */; };
 		63EC6E4D253B47BC00D7CD64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63EC6E4C253B47BC00D7CD64 /* Assets.xcassets */; };
 		63EC6E50253B47BC00D7CD64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63EC6E4E253B47BC00D7CD64 /* LaunchScreen.storyboard */; };
 		63EC6E5B253B47BD00D7CD64 /* CVTwiPush_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC6E5A253B47BD00D7CD64 /* CVTwiPush_iOSTests.swift */; };
 		63EC6E66253B47BD00D7CD64 /* CVTwiPush_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EC6E65253B47BD00D7CD64 /* CVTwiPush_iOSUITests.swift */; };
+		63EF3CBC2541B8220074187C /* TwitterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF3CB72541B8220074187C /* TwitterStatus.swift */; };
+		63EF3CBD2541B8220074187C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF3CB82541B8220074187C /* User.swift */; };
+		63EF3CBE2541B8220074187C /* RTGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF3CB92541B8220074187C /* RTGroup.swift */; };
+		63EF3CBF2541B8220074187C /* TwitterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF3CBA2541B8220074187C /* TwitterUser.swift */; };
+		63EF3CC02541B8220074187C /* TwitterMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EF3CBB2541B8220074187C /* TwitterMedia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +47,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D08AD54D27B13D184009F75 /* Pods_CVTwiPush_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVTwiPush_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E62577778550C7E51020EF8 /* Pods-CVTwiPush-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVTwiPush-iOS.release.xcconfig"; path = "Target Support Files/Pods-CVTwiPush-iOS/Pods-CVTwiPush-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		5F46AABA100A5DC613DB8C0C /* Pods-CVTwiPush-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVTwiPush-iOS.debug.xcconfig"; path = "Target Support Files/Pods-CVTwiPush-iOS/Pods-CVTwiPush-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		63102FB52541AF620010C91A /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		633B33D92547ECF000F2ACD4 /* MBPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBPickerView.swift; sourceTree = "<group>"; };
+		63911F01253C5D9600D7DB7D /* TweetListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetListTableViewController.swift; sourceTree = "<group>"; };
+		639A21872547F83A00ED8EED /* TwitterUserPickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterUserPickerCell.swift; sourceTree = "<group>"; };
+		639A218C2547F85600ED8EED /* TwitterUserPickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TwitterUserPickerCell.xib; sourceTree = "<group>"; };
 		63EC6E3D253B47BA00D7CD64 /* CVTwiPush-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CVTwiPush-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EC6E40253B47BA00D7CD64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63EC6E42253B47BA00D7CD64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		63EC6E44253B47BA00D7CD64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63EC6E44253B47BA00D7CD64 /* TweetListNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetListNavigationViewController.swift; sourceTree = "<group>"; };
 		63EC6E47253B47BA00D7CD64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63EC6E4A253B47BB00D7CD64 /* CVTwiPush_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CVTwiPush_iOS.xcdatamodel; sourceTree = "<group>"; };
 		63EC6E4C253B47BC00D7CD64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +70,11 @@
 		63EC6E61253B47BD00D7CD64 /* CVTwiPush-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CVTwiPush-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EC6E65253B47BD00D7CD64 /* CVTwiPush_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTwiPush_iOSUITests.swift; sourceTree = "<group>"; };
 		63EC6E67253B47BD00D7CD64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63EF3CB72541B8220074187C /* TwitterStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterStatus.swift; sourceTree = "<group>"; };
+		63EF3CB82541B8220074187C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		63EF3CB92541B8220074187C /* RTGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTGroup.swift; sourceTree = "<group>"; };
+		63EF3CBA2541B8220074187C /* TwitterUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterUser.swift; sourceTree = "<group>"; };
+		63EF3CBB2541B8220074187C /* TwitterMedia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterMedia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4764888B845264A7E802DF39 /* Pods_CVTwiPush_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6320718625491D4400086862 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				639A21872547F83A00ED8EED /* TwitterUserPickerCell.swift */,
+				639A218C2547F85600ED8EED /* TwitterUserPickerCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		63EC6E34253B47BA00D7CD64 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +119,8 @@
 				63EC6E59253B47BD00D7CD64 /* CVTwiPush-iOSTests */,
 				63EC6E64253B47BD00D7CD64 /* CVTwiPush-iOSUITests */,
 				63EC6E3E253B47BA00D7CD64 /* Products */,
+				B3CEE0125F86FFCAE4845AFE /* Pods */,
+				80C47CEC5A9D32FA98359B0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +137,16 @@
 		63EC6E3F253B47BA00D7CD64 /* CVTwiPush-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				63EF3CB62541B8220074187C /* Model */,
 				63EC6E40253B47BA00D7CD64 /* AppDelegate.swift */,
 				63EC6E42253B47BA00D7CD64 /* SceneDelegate.swift */,
-				63EC6E44253B47BA00D7CD64 /* ViewController.swift */,
+				63EC6E44253B47BA00D7CD64 /* TweetListNavigationViewController.swift */,
+				63911F01253C5D9600D7DB7D /* TweetListTableViewController.swift */,
 				63EC6E46253B47BA00D7CD64 /* Main.storyboard */,
+				63102FB52541AF620010C91A /* ContainerViewController.swift */,
+				6320718625491D4400086862 /* Views */,
 				63EC6E4C253B47BC00D7CD64 /* Assets.xcassets */,
+				633B33D92547ECF000F2ACD4 /* MBPickerView.swift */,
 				63EC6E4E253B47BC00D7CD64 /* LaunchScreen.storyboard */,
 				63EC6E51253B47BC00D7CD64 /* Info.plist */,
 				63EC6E49253B47BA00D7CD64 /* CVTwiPush_iOS.xcdatamodeld */,
@@ -131,6 +172,35 @@
 			path = "CVTwiPush-iOSUITests";
 			sourceTree = "<group>";
 		};
+		63EF3CB62541B8220074187C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63EF3CB72541B8220074187C /* TwitterStatus.swift */,
+				63EF3CB82541B8220074187C /* User.swift */,
+				63EF3CB92541B8220074187C /* RTGroup.swift */,
+				63EF3CBA2541B8220074187C /* TwitterUser.swift */,
+				63EF3CBB2541B8220074187C /* TwitterMedia.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80C47CEC5A9D32FA98359B0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D08AD54D27B13D184009F75 /* Pods_CVTwiPush_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3CEE0125F86FFCAE4845AFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F46AABA100A5DC613DB8C0C /* Pods-CVTwiPush-iOS.debug.xcconfig */,
+				5E62577778550C7E51020EF8 /* Pods-CVTwiPush-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63EC6E6A253B47BD00D7CD64 /* Build configuration list for PBXNativeTarget "CVTwiPush-iOS" */;
 			buildPhases = (
+				8E6C6EEFADF26800F3BAF39C /* [CP] Check Pods Manifest.lock */,
 				63EC6E39253B47BA00D7CD64 /* Sources */,
 				63EC6E3A253B47BA00D7CD64 /* Frameworks */,
 				63EC6E3B253B47BA00D7CD64 /* Resources */,
+				55784CC59671C86924750A62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,6 +308,7 @@
 			files = (
 				63EC6E50253B47BC00D7CD64 /* LaunchScreen.storyboard in Resources */,
 				63EC6E4D253B47BC00D7CD64 /* Assets.xcassets in Resources */,
+				639A218D2547F85600ED8EED /* TwitterUserPickerCell.xib in Resources */,
 				63EC6E48253B47BA00D7CD64 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,15 +329,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		55784CC59671C86924750A62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVTwiPush-iOS/Pods-CVTwiPush-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVTwiPush-iOS/Pods-CVTwiPush-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CVTwiPush-iOS/Pods-CVTwiPush-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E6C6EEFADF26800F3BAF39C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVTwiPush-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		63EC6E39253B47BA00D7CD64 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63EC6E45253B47BA00D7CD64 /* ViewController.swift in Sources */,
+				63EF3CBF2541B8220074187C /* TwitterUser.swift in Sources */,
+				63911F02253C5D9600D7DB7D /* TweetListTableViewController.swift in Sources */,
+				63EF3CBE2541B8220074187C /* RTGroup.swift in Sources */,
+				63EC6E45253B47BA00D7CD64 /* TweetListNavigationViewController.swift in Sources */,
 				63EC6E4B253B47BB00D7CD64 /* CVTwiPush_iOS.xcdatamodeld in Sources */,
+				639A21882547F83A00ED8EED /* TwitterUserPickerCell.swift in Sources */,
+				633B33DA2547ECF000F2ACD4 /* MBPickerView.swift in Sources */,
+				63EF3CC02541B8220074187C /* TwitterMedia.swift in Sources */,
 				63EC6E41253B47BA00D7CD64 /* AppDelegate.swift in Sources */,
+				63EF3CBD2541B8220074187C /* User.swift in Sources */,
+				63102FB62541AF620010C91A /* ContainerViewController.swift in Sources */,
 				63EC6E43253B47BA00D7CD64 /* SceneDelegate.swift in Sources */,
+				63EF3CBC2541B8220074187C /* TwitterStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +561,7 @@
 		};
 		63EC6E6B253B47BD00D7CD64 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F46AABA100A5DC613DB8C0C /* Pods-CVTwiPush-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -456,6 +581,7 @@
 		};
 		63EC6E6C253B47BD00D7CD64 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E62577778550C7E51020EF8 /* Pods-CVTwiPush-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

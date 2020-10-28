@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import AMScrollingNavbar
 
-class ViewController: UIViewController {
-
+class TweetListNavigationViewController:ScrollingNavigationController{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.navigationBar.isTranslucent = false
     }
 
 
