@@ -8,6 +8,27 @@
 import UIKit
 
 class TweetListTableViewController: UITableViewController {
+    //Avatar
+    @IBOutlet weak var avatarImageView: UIImageView!
+    
+    //Username, status type and created at
+    @IBOutlet weak var userRealNameLabel: UILabel!
+    @IBOutlet weak var statusTypeLabel: UILabel!
+    @IBOutlet weak var createdAtLabel: UILabel!
+    
+    //Image or video views
+    /// frame of views
+    @IBOutlet weak var horizontalStackView: UIStackView! //big frame
+    @IBOutlet weak var leftVerticalStackView: UIStackView! //left frame
+    @IBOutlet weak var rightVerticalStackView: UIStackView! //right frame
+    
+    ///image views
+    @IBOutlet weak var leftTopImageView: UIImageView!
+    @IBOutlet weak var leftBottomImageView: UIImageView!
+    @IBOutlet weak var rightTopImageView: UIImageView!
+    @IBOutlet weak var rightBottomImageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Uncomment the following line to preserve selection between presentations
@@ -15,6 +36,19 @@ class TweetListTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        initView()
+    }
+    
+    public func initView(){
+        horizontalStackView.layer.cornerRadius = 5
+        horizontalStackView.layer.masksToBounds = true
+        
+        avatarImageView.layer.cornerRadius = 21
+        avatarImageView.layer.masksToBounds = true
+    }
+    
+    public func initWith(id:Int64){
+        
     }
 
     // MARK: - Table view data source
